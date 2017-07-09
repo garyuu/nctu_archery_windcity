@@ -1,2 +1,3 @@
-# nctu_archery_windcity
-A website used for contest scoring.
+# NCTU Archery - Windcity Scoring Site
+
+## Description
