@@ -1,10 +1,26 @@
+@font-face{
+  font-family: PingFang;
+  src: url(../fonts/PingFang/PingFang-TC-Regular.otf) format("opentype");
+}
+
+@font-face{
+  font-family: "San Francisco";
+  src: url(../fonts/San Francisco/San Francisco-Regular.otf) format("opentype");
+}
+
+body{
+  font-family: "San Francisco", PingFang, sans-serif;
+}
+
 .headerBanner{
   background-color: skyblue;
   color: white;
 }
+
 input{
   text-align: center;
 }
+
 #inputError{
   color: red;
 }
