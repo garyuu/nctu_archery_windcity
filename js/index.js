@@ -1,0 +1,11 @@
+$("#verifyPage").hide();
+//$("#scoringEnabled").hide();
+//$("#inputError").hide();
+$("#btnStartScoring").click(function(){
+  $("#mainPage").hide();
+  $("#verifyPage").show();
+});
+$("#btnBackToMainPage").click(function(){
+  $("#verifyPage").hide();
+  $("#mainPage").show();
+});

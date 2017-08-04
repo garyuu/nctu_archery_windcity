@@ -1,0 +1,10 @@
+.headerBanner{
+  background-color: skyblue;
+  color: white;
+}
+input{
+  text-align: center;
+}
+#inputError{
+  color: red;
+}

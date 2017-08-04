@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>第二十一屆風城盃</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--my CSS-->
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="mainPage">
+        <div class="row">
+          <div class="col-xs-12 text-center headerBanner">
+            <h1>第二十一屆風城盃</h1>
+          </div>
+          <br><br><br><br><br><br><br><br><br>
+          <div class="col-xs-12">
+            <button type="button" class="btn btn-default btn-lg btn-block" id="btnStartScoring">競賽計分</button>
+          </div>
+          <br><br><br><br><br><br><br>
+          <div class="col-xs-12">
+            <button type="button" class="btn btn-primary btn-lg btn-block">賽程/成績查詢</button>
+          </div>
+        </div>
+      </div>
+      <div id="verifyPage">
+        <br>
+        <div class="row">
+          <div class="col-xs-6 col-xs-offset-3 text-center">
+            <button type="button" class="btn btn-default btn-lg" id="btnBackToMainPage"><i class="fa fa-undo"></i> 回上一頁</button>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-xs-8 text-center col-xs-offset-2">
+            <h1>競賽計分<br><small>請輸入靶位碼</small></h1>
+            <div id="scoringDisabled">
+              <div class="form-group">
+                <label class="control-label"></label>
+                <input type="text" class="form-control" disabled placeholder="比賽尚未開始">
+              </div>
+              <button type="submit" class="btn btn-default" disabled="disabled">送出</button>
+            </div>
+            <div id="scoringEnabled">
+              <div class="form-group">
+                <label class="control-label" for="verifyCode">
+                  <div id="inputError">輸入錯誤</div>
+                </label>
+                <input type="text" class="form-control" id="verifyCode">
+              </div>
+              <button type="submit" class="btn btn-default" id="btnSubmitCode">送出</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <!--jQuery-->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <!--my js-->
+      <script src="js/index.js"></script>
+    </footer>
+  </body>
+</html>
