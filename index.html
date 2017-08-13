@@ -26,7 +26,7 @@
           </div>
           <br><br><br><br><br><br><br>
           <div class="col-xs-12">
-            <button type="button" class="btn btn-primary btn-lg btn-block">賽程/成績查詢</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="btnLookUpResult">賽程/成績查詢</button>
           </div>
         </div>
       </div>
@@ -34,7 +34,7 @@
         <br>
         <div class="row">
           <div class="col-xs-6 col-xs-offset-3 text-center">
-            <button type="button" class="btn btn-default btn-lg" id="btnBackToMainPage"><i class="fa fa-undo"></i> 回上一頁</button>
+            <button type="button" class="btn btn-default btn-lg" id="btnBackToMainPage1"><i class="fa fa-arrow-left" aria-hidden="true"></i> 回上一頁</button>
           </div>
         </div>
         <br>
@@ -56,6 +56,83 @@
                 <input type="text" class="form-control" id="verifyCode">
               </div>
               <button type="submit" class="btn btn-default" id="btnSubmitCode">送出</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="resultPage">
+        <br>
+        <div class="row">
+          <div class="col-xs-6 text-center">
+            <button type="button" class="btn btn-default btn-lg" id="btnBackToMainPage2"><i class="fa fa-arrow-left" aria-hidden="true"></i> 回上一頁</button>
+          </div>
+          <div class="col-xs-6 text-center">
+            <button type="button" class="btn btn-default btn-lg" id="refreshData"><i class="fa fa-refresh" aria-hidden="true"></i> 重新整理</button>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="nav nav-tabs" id="contestTabs">
+              <li><a href="#qual" data-toggle="tab">資格賽</a></li>
+              <li><a href="#indMatch" data-toggle="tab">個人對抗賽</a></li>
+              <li><a href="#teamMatch" data-toggle="tab">團體對抗賽</a></li>
+            </ul>
+            <div class="tab-content">
+              <div id="qual" class="tab-pane">
+                <ul class="nav nav-tabs" id="qualTabs">
+                  <li><a href="#qualRookie" data-toggle="tab">新人組</a></li>
+                  <li><a href="#qualMenC" data-toggle="tab">男子丙組</a></li>
+                  <li><a href="#qualWomenC" data-toggle="tab">女子丙組</a></li>
+                  <li><a href="#qualB" data-toggle="tab">乙組</a></li>
+                </ul>
+              </div>
+              <div id="indMatch" class="tab-pane">
+                <ul class="nav nav-tabs" id="indMatchTabs">
+                  <li><a href="#indMatchRookie" data-toggle="tab">新人組</a></li>
+                  <li><a href="#indMatchMenC" data-toggle="tab">男子丙組</a></li>
+                  <li><a href="#indMatchWomenC" data-toggle="tab">女子丙組</a></li>
+                  <li><a href="#indMatchB" data-toggle="tab">乙組</a></li>
+                </ul>
+              </div>
+              <div id="teamMatch" class="tab-pane">
+                <ul class="nav nav-tabs" id="teamMatchTabs">
+                  <li><a href="#teamMatchRookie" data-toggle="tab">新人組</a></li>
+                  <li><a href="#teamMatchMenC" data-toggle="tab">男子丙組</a></li>
+                  <li><a href="#teamMatchWomenC" data-toggle="tab">女子丙組</a></li>
+                  <li><a href="#teamMatchB" data-toggle="tab">乙組</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div id="qualRookie" class="tab-pane">
+              </div>
+              <div id="qualMenC" class="tab-pane">
+              </div>
+              <div id="qualWomenC" class="tab-pane">
+              </div>
+              <div id="qualB" class="tab-pane">
+              </div>
+            </div>
+            <div class="tab-content">
+              <div id="indMatchRookie" class="tab-pane">
+              </div>
+              <div id="indMatchMenC" class="tab-pane">
+              </div>
+              <div id="indMatchWomenC" class="tab-pane">
+              </div>
+              <div id="indMatchB" class="tab-pane">
+              </div>
+            </div>
+            <div class="tab-content">
+              <div id="teamMatchRookie" class="tab-pane">
+              </div>
+              <div id="teamMatchMenC" class="tab-pane">
+              </div>
+              <div id="teamMatchWomenC" class="tab-pane">
+              </div>
+              <div id="teamMatchB" class="tab-pane">
+              </div>
             </div>
           </div>
         </div>
