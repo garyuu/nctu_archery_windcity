@@ -1,5 +1,6 @@
 $("#verifyPage").hide();
 $("#resultPage").hide();
+$("#scoringPage").hide();
 //$("#scoringEnabled").hide();
 //$("#inputError").hide();
 
@@ -23,18 +24,17 @@ $("#btnBackToMainPage2").click(function(){
   $("#mainPage").show();
 });
 
-$('#contestTabs').on('click', 'a[data-toggle="tab"]', function(e) {
+$("#btnSubmitCode").click(function(){
+  $("#verifyPage").hide();
+  $("#scoringPage").show();
+});
+
+$("#btnBackToMainPage3").click(function(){
+  $("#scoringPage").hide();
+  $("#mainPage").show();
+});
+
+$("ul.nav-tabs a").click(function(e){
   e.preventDefault();
-
-  var $link = $(this);
-
-  if (!$link.parent().hasClass('active')) {
-
-    $('.tab-content:not(.' + $link.attr('href').replace('#','') + ') .tab-pane').removeClass('active');
-
-    $('a[href="' + $link.attr('href') + '_all"][data-toggle="tab"]').click();
-
-    $('.tab-content.' + $link.attr('href').replace('#','') + ' .tab-pane:first').addClass('active');
-  }
-
+  $(this).tab('show');
 });

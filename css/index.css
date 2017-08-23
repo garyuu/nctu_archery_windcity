@@ -24,3 +24,28 @@ input{
 #inputError{
   color: red;
 }
+
+#scoringPage input{
+  background-color: white;
+  border-radius: 0;
+}
+
+#scoringPage td{
+  text-align: center;
+  padding: 0;
+}
+
+#scoringPage table .btn-default{
+  color: white;
+  background: black;
+  border-radius: 0;
+}
+
+#scoringPage table .btn-default:active{
+  color: black;
+  background: white;
+}
+
+#keypad{
+  margin-bottom: 0;
+}
