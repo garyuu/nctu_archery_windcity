@@ -35,17 +35,26 @@ input{
   padding: 0;
 }
 
-#scoringPage table .btn-default{
+#scoringPage .btn-group .btn-default{
   color: white;
   background: black;
   border-radius: 0;
 }
 
-#scoringPage table .btn-default:active{
+#scoringPage .btn-group .btn-default:active{
   color: black;
   background: white;
 }
 
 #keypad{
-  margin-bottom: 0;
+  position: fixed;
+  bottom: 0px;
+}
+
+#scoreTable{
+  height: 500px;
+}
+
+#scoreTable td{
+  font-size: 20px;
 }

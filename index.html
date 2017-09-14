@@ -41,17 +41,17 @@
         <div class="row">
           <div class="col-xs-8 text-center col-xs-offset-2">
             <h1>競賽計分<br><small>請輸入靶位碼</small></h1>
-            <div id="scoringDisabled">
+            <!--<div id="scoringDisabled">
               <div class="form-group">
                 <label class="control-label"></label>
                 <input type="text" class="form-control" disabled placeholder="比賽尚未開始">
               </div>
               <button type="submit" class="btn btn-default" disabled>送出</button>
-            </div>
+            </div>-->
             <div id="scoringEnabled">
               <div class="form-group">
                 <label class="control-label" for="verifyCode">
-                  <div id="inputError">輸入錯誤</div>
+                  <!--<div id="inputError">輸入錯誤</div>-->
                 </label>
                 <input type="text" class="form-control" id="verifyCode">
               </div>
@@ -146,115 +146,140 @@
         </div>
         <br>
         <div class="row">
-          <div class="col-xs-12"> 
-            <table class="table table-condensed">
-              <thead>
-                <tr>
-                  <th colspan="6">1A OO大學 XXX</th>
-                  <th>總分</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-xs-12"> 
-            <table class="table table-condensed">
-              <thead>
-                <tr>
-                  <th colspan="6">1B OO大學 XXX</th>
-                  <th>總分</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-xs-12"> 
-            <table class="table table-condensed">
-              <thead>
-                <tr>
-                  <th colspan="6">1C OO大學 XXX</th>
-                  <th>總分</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-xs-12"> 
-            <table class="table table-condensed">
-              <thead>
-                <tr>
-                  <th colspan="6">1D OO大學 XXX</th>
-                  <th>總分</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+          <div id="scoreTable">
+            <div class="col-xs-12">
+              <table class="table table-condensed table-bordered">
+                <thead>
+                  <tr>
+                    <th colspan="6"><!--靶位 大學 姓名--></th>
+                    <th>總分</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-xs-12"> 
+              <table class="table table-condensed table-bordered">
+                <thead>
+                  <tr>
+                    <th colspan="6"><!--靶位 大學 姓名--></th>
+                    <th>總分</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <!--<td><input type="text" class="form-control" size="1" maxlength="1" readonly="true"></td>-->
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-xs-12"> 
+              <table class="table table-condensed table-bordered">
+                <thead>
+                  <tr>
+                    <th colspan="6"><!--靶位 大學 姓名--></th>
+                    <th>總分</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-xs-12"> 
+              <table class="table table-condensed table-bordered">
+                <thead>
+                  <tr>
+                    <th colspan="6"><!--靶位 大學 姓名--></th>
+                    <th>總分</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12">
-            <table class="table" id="keypad">
-              <tbody>
-                <tr>
-                  <td><button type="button" class="btn btn-default btn-lg btn-block">X</button></td>
-                  <td><button type="button" class="btn btn-default btn-lg btn-block">8</button></td>
-                  <td><button type="button" class="btn btn-default btn-lg btn-block">5</button></td>
-                  <td><button type="button" class="btn btn-default btn-lg btn-block">2</button></td>
-                </tr>
-                <tr>
-                  <td><button type="button" class="btn btn-default btn-lg btn-block">10</button></td>
-                  <td><button type="button" class="btn btn-default btn-lg btn-block">7</button></td>
-                  <td><button type="button" class="btn btn-default btn-lg btn-block">4</button></td>
-                  <td><button type="button" class="btn btn-default btn-lg btn-block">1</button></td>
-                </tr>
-                <tr>
-                  <td><button type="button" class="btn btn-default btn-lg btn-block">9</button></td>
-                  <td><button type="button" class="btn btn-default btn-lg btn-block">6</button></td>
-                  <td><button type="button" class="btn btn-default btn-lg btn-block">3</button></td>
-                  <td><button type="button" class="btn btn-default btn-lg btn-block">M</button></td>
-                </tr>
-              </tbody>
-            </table>
+          <div id="keypad">
+            <div class="col-xs-12">
+              <div class="btn-group btn-group-justified" role="group">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">X</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">8</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">5</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">2</button>
+                </div>
+              </div>
+              <div class="btn-group btn-group-justified" role="group">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">10</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">7</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">4</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">1</button>
+                </div>
+              </div>
+              <div class="btn-group btn-group-justified" role="group">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">9</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">6</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">3</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">M</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
