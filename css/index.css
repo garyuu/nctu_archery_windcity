@@ -35,15 +35,16 @@ input{
   padding: 0;
 }
 
-#scoringPage .btn-group .btn-default{
+#scoringPage .btn-group .btn-lg{
   color: white;
   background: black;
   border-radius: 0;
+  border-color: gray;
 }
 
-#scoringPage .btn-group .btn-default:active{
+#scoringPage .btn-group .btn-lg:active{
   color: black;
-  background: white;
+  background: white
 }
 
 #keypad{
