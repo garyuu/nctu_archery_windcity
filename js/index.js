@@ -43,8 +43,8 @@ function addTable(){
     var $table = $("<table>").addClass("table table-bordered");
     $table.append("<thead><tr><th><th>");
     
-    $table.find("th:first").attr("colspan","6").text("");//text裡面加上靶號,大學,姓名
-    $table.find("th:last").text("總分");
+    $table.find("th:first").attr("colspan","6").html("");//html裡面加上靶號,大學,姓名
+    $table.find("th:last").html("總分");
     
     $table.append("<tbody><tr>");
     var $row=$table.find("tr:last");
@@ -52,7 +52,7 @@ function addTable(){
     for(j=1;j<=6;j++){
       $row.append("<td>");
       $row.children("td:last").addClass("tableData").attr("id","td"+i+j);
-      $row.children("td:last").text("\xa0");
+      $row.children("td:last").html("\xa0");
     }
     $row.append("<td>");
     $row.children("td:last").addClass("totalScore");
@@ -64,8 +64,21 @@ function addTable(){
 
 addTable();
 
+var isSelected = false;
+var targetID;
+
 $(".tableData").click(function(){
   $(".tableData").css("background-color","white");
   $(this).css("background-color","yellow");
+  isSelected = true;
+  targetID = $(this).attr("id");
 });
+
+$("#keypad .btn").click(function(){
+  if(isSelected){
+    $("#"+targetID).html($(this).html());
+  }
+});
+
+
 
