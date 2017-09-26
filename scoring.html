@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>第二十一屆風城盃</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--my CSS-->
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <br>
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3 text-center">
+          <a href="index.html" class="btn btn-default btn-lg" role="button"><i class="fa fa-home" aria-hidden="true"></i> 回首頁</a>
+        </div>
+      </div>
+      <br>
+      <div id="verifyPage">
+        <div class="row">
+          <div class="col-xs-8 text-center col-xs-offset-2">
+            <h1>競賽計分<br><small>請輸入靶位碼</small></h1>
+            <div class="form-group">
+              <label class="control-label" for="verifyCode">
+              </label>
+              <input type="text" class="form-control" id="verifyCode">
+            </div>
+            <button type="submit" class="btn btn-default" id="btnSubmitCode">送出</button>
+          </div>
+        </div>
+      </div>
+      <div id="scoringPage">
+        <div class="row">
+          <div id="scoreTable">
+          </div>
+        </div>
+        <div class="row">
+          <div id="keypad">
+            <div class="col-xs-12">
+              <div class="btn-group btn-group-justified" role="group">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-lg">X</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-lg">10</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-lg">9</button>
+                </div>
+              </div>
+              <div class="btn-group btn-group-justified" role="group">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-lg">8</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-lg">7</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-lg">6</button>
+                </div>
+              </div>
+              <div class="btn-group btn-group-justified" role="group">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-lg">5</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-lg">M</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-lg">清除</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <!--jQuery-->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <!--my js-->
+      <script src="js/index.js"></script>
+    </footer>
+  </body>
+</html>

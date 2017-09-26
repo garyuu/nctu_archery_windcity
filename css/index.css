@@ -21,10 +21,6 @@ input{
   text-align: center;
 }
 
-#inputError{
-  color: red;
-}
-
 #scoringPage input{
   background-color: white;
   border-radius: 0;
